@@ -141,7 +141,7 @@ app.post('/submitJoke', async (req, res) => {
 app.post('/addJoke', async (req, res) => {
 	res.setHeader('Content-Type', 'application/json');
 	var apiKey = req.query.id;
-	if (apiKey == "NuDbYfuXyW") {
+	if (apiKey == "======") {
 	var joke = req.body.joke
 	var ref = db.collection('PoopyAPIKeys').doc('Data');
 	var doc = await ref.get();
