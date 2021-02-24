@@ -9,23 +9,23 @@ The docs provided on the website look horrible because the creator of the API, (
 
 ## `GET` requests
 ### Get a poop joke 
-`https://poopjokes.apis.softsquirrel.tk/random?key=example`
+`https://poopjokes.apis.softsquirrel.tk/random?key=example`\
 You can get a random poop joke using the URL above. Although there are only like 3 jokes in the database so you wont get much of a variety of jokes.
 
 ### Getting a poop joke by ID
 
-`https://poopjokes.apis.softsquirrel.tk/byID?key=example&id=[3]`
+`https://poopjokes.apis.softsquirrel.tk/byID?key=example&id=[3]`\
 Want a specific poop joke? Well now you can do that with the URL provided above!
 
 ### Recieving all poop jokes
 
-`https://poopjokes.apis.softsquirrel.tk/all?key=example`
+`https://poopjokes.apis.softsquirrel.tk/all?key=example`\
 You can get all the poop jokes with the URL above! Now get ready for the funniest poop jokes ever!
 
 ## `POST` requests
 
 ### Submitting a poop joke
-`https://poopjokes.apis.softsquirrel.tk/submitJoke?key=example`
+`https://poopjokes.apis.softsquirrel.tk/submitJoke?key=example`\
 Want to submit your very own poop joke? You can do that with the URL above and the code below! This is in Axios with Node.js 12.16.1
 ```js
 axios({
@@ -38,7 +38,7 @@ axios({
 ```
 
 ### Reporting a poop joke
-`https://poopjokes.apis.softsquirrel.tk/reportJoke?key=example`
+`https://poopjokes.apis.softsquirrel.tk/reportJoke?key=example`\
 Find a poop joke unfunny, cringe, or inappropiate? You can report a poop joke with the URL above and the Code below!
 ```js
 axios({
