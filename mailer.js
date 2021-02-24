@@ -15,7 +15,7 @@ exports.sendMail = function(target, apiKey) {
 		from: email,
 		to: target,
 		subject: 'Thank you for using Poop Joke API!',
-		html: "Hello! Thank you for choosing the poop joke api! Here is your API Key: " + apiKey
+		html: "Hello, thank you for choosing the poop joke api! Here is your API Key: " + apiKey
 	};
 
 	transporter.sendMail(mailOptions, function(error, info){

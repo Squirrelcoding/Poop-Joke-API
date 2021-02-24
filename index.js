@@ -1,4 +1,3 @@
-//Setting Things up
 const express = require('express');
 const admin = require('firebase-admin');
 var cors = require('cors');
@@ -20,7 +19,7 @@ admin.initializeApp({
 	databaseURL: "====="
 });
 const db = admin.firestore();
-//====================================================
+
 app.get('/join', function(req, res) {
 	res.render("joinpage", {message:""})
 })
