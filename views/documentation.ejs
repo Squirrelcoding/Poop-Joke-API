@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>DebitStore | Edit</title>
+<meta charset="UTF-8">
+<link rel="icon" href="icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+<link rel="stylesheet" href="/style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a href="/join" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+		<a href="/docs" class="w3-bar-item w3-button w3-padding-large w3-white">Docs</a>
+  </div>
+</div>
+	<br><br><br>
+	<h1>Documentation</h1>
+	<br><hr>
+  <h1>GET requests</h1>
+	<hr>
+	<h2>Recieving a poop joke</h2>
+	<code><a class="Font2" href="about:blank" target="about:blank">https://poopjokes.apis.softsquirrel.tk/random?key=example</a></code>
+	<p>To get a random Joke, just use the URL! In no time, you will recieve a hilarious poop joke!</p>
+	<br><hr>
+	<h2>Getting a poop joke by ID</h2>
+	<code><a class="Font2" href="about:blank" target="about:blank">https://poopjokes.apis.softsquirrel.tk/byID?key=example&id=[ID Here]</a></code>
+	<p>If you would like to request a joke by its ID, use the URL above. Remember to include your API key <b>AND</b> the joke ID.</p>
+	<h2>Recieving all poop jokes</h2>
+	<code><a class="Font2" href="about:blank" target="about:blank">https://poopjokes.apis.softsquirrel.tk/all?key=example</a></code>
+	<p>Want to get all of the hilarious poop jokes? Well using the URL above, you can do that now!</p>
+	<br><hr>
+	<br><hr>	
+	<h1>POST requests</h1>
+
+	<h2>Posting a poop joke</h2>
+	<code><a class="Font2" href="about:blank" target="about:blank">https://poopjokes.apis.softsquirrel.tk/submitJoke?key=example</a></code>
+	<p>Do you want to submit your poop joke? Well, with this URL you can do that in no time! The following is a code snippet to help you with this.</p>
+	<p class="Font2">This is in Axios with Node.js<p>
+	<code>
+//I could'nt find a way to add the indentation.<br>
+axios({ <br>
+  method: 'post',<br>
+  url: 'https://poopjokes.apis.softsquirrel.tk/submitJoke?key=example',<br>
+	data: {<br>
+		joke: "Your Joke here!"<br>
+	}<br>
+})<br>
+</code>
+<br><br><br><br><br><br><br><hr>
+<h2>Reporting a poop joke</h2>
+<code><a class="Font2" href="about:blank" target="about:blank">https://poopjokes.apis.softsquirrel.tk/reportJoke?key=example</a></code>
+<p>Find a poop joke cringe or bad? Well, you can report that joke with the provided URL!</p>
+<p class="Font2">This is in Axios with Node.js 12.16.1</p>
+<code>
+//I couldn't find a way to add the indentation again.<br>
+axios({ <br>
+  method: 'post',<br>
+  url: 'https://poopjokes.apis.softsquirrel.tk/reportJoke?key=example',<br>
+	data: {<br>
+		id: 000,<br>
+		joke: "Your Joke here!"<br>
+	}<br>
+})<br>
+</code>
+<br><br><br><br><br><hr>
+</body>
+</html>
