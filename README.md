@@ -7,7 +7,7 @@ You can go to https://poopjokes.apis.softsquirrel.tk/join for more information a
 # Documentation
 The docs provided on the website look horrible because the creator of the API, (aka me) is horrible at CSS and doesn't know much of it.
 
-## GET requests
+## `GET` requests
 ### Get a poop joke 
 `https://poopjokes.apis.softsquirrel.tk/random?key=example`
 You can get a random poop joke using the URL above. Although there are only like 3 jokes in the database so you wont get much of a variety of jokes.
